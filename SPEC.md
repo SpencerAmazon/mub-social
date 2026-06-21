@@ -511,6 +511,63 @@ All category definitions, examples, submission guidelines, and tone language are
 
 ---
 
+## 21. Verified Badge System (X-inspired, MUB-adapted)
+
+### Overview
+Inspired by X's (public) verification badge system for trust and reducing impersonation:
+- Small, non-intrusive badge next to display name/handle in posts, profiles, suggestions, and search.
+- Tiered for different levels of notability.
+- Visible in feed, "Buddies to follow", etc.
+- Tooltip on hover/click explaining the verification.
+
+**MUB Flavor**: "Only Human" theme. Badges celebrate authentic chaos rather than polish. Icon: ☀️ (tied to "Under the Same Sun™").
+
+### Tiers
+- **Verified** (sky blue ☀️): Standard for users with notable, high-engagement MUB Moments (e.g. viral relatable truths).
+- **Legend** (amber/gold ☀️): Top contributors with massive community impact ("Chaos Legends").
+- **Official** (emerald ☀️): Platform accounts, partners, or brand-safe entities.
+
+### Placement & Display (X-like structure)
+- Post header: **Name ☀️ · @handle · time**
+- Sidebar suggestions: Name ☀️ @handle + Follow button.
+- Future: Profile pages, search results, notifications.
+- Color-coded for quick scan.
+- Non-blocking: Doesn't affect post layout.
+
+### Verification Process (MUB-specific, community-first)
+1. **Application**: User submits via "Get MUB Verified" form:
+   - Link/describe notable moment(s).
+   - Reason ("why you're a notable human").
+   - Agree to guidelines.
+2. **Criteria** (aligned with brand):
+   - 10k+ total engagements (likes + mubs).
+   - No violations (hate, non-consensual, off-vibe).
+   - Community upvotes or manual review for authenticity.
+3. **Review**: Manual + signals (like X's notability). "Sun Pass" subscription for priority review.
+4. **Approval**: Badge granted instantly in prototype; real = pending queue + email.
+5. **Revocation**: On violations or community reports.
+6. **Benefits**: Higher visibility, "verified" feed filter, reduced impersonation flags.
+
+**Anti-abuse**: Like X, manual oversight + reports. Ties into Moderation section.
+
+### Implementation (Current Prototype)
+- Client-side only (mock data + localStorage).
+- Badges on verified seed posts (e.g. @fridgephantom as Legend) and suggestions.
+- New posts from verified user show badge.
+- "Apply Now" opens modal with form; submit "approves" and enables for future posts.
+- Filter: "Verified" tab shows only verified moments.
+- No backend yet (future: Supabase flag per user).
+
+### Open Questions
+- Exact criteria thresholds (engagement numbers)?
+- Paid tier details vs pure community?
+- Badge on anonymous posts?
+- Integration with main site (myuselessbuddy.com) for cross-verified creators?
+
+This extends the Moderation and User features for trust.
+
+---
+
 **End of v0.1 Spec**
 
 This document is living. Update as we learn.
